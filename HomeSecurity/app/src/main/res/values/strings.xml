@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">HomeSecurity</string>
+
+    <string name="title_home">Home</string>
+    <string name="title_live">Cameras</string>
+    <string name="title_profiles">Profiles</string>
+
+    <string name="title_activity_check_list">CheckListActivity</string>
+
+    <string name="slider_text"> Quiet Mode</string>
+
+    <string name="save">Save</string>
+    <string name="name_hint">Profile Name</string>
+
+    <string name="login_header">Welcome to Home Security!</string>
+    <string name="user_hint">Username</string>
+    <string name="pass_hint">Password</string>
+    <string name="log_in_btn">Log In</string>
+
+    <string name="logtitle">Event Log</string>
+
+    <string name="emer_message">Select Action</string>
+    <string name="emer_title">Emergency Call</string>
+</resources>

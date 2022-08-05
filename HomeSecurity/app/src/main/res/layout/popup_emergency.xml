@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="350dp"
+    android:layout_height="200dp"
+    android:layout_gravity="center"
+    android:background="@color/cardview_dark_background"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+
+    <ImageButton
+        android:id="@+id/close_button"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:background="@android:color/transparent"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@+id/emer_message"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/emer_title"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/close" />
+
+    <TextView
+        android:id="@+id/emer_title"
+        android:layout_width="129dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/emer_title"
+        android:textColor="#FFC107"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/emer_message"
+        android:layout_width="224dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:text="@string/emer_message"
+        android:textColor="#FFC107"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emer_title"
+        app:layout_constraintVertical_bias="0.127" />
+
+    <ImageButton
+        android:id="@+id/siren_button"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/fire_button"
+        app:layout_constraintStart_toEndOf="@+id/police_button"
+        app:layout_constraintTop_toBottomOf="@+id/emer_message"
+        app:layout_constraintVertical_bias="0.531"
+        app:srcCompat="@drawable/siren" />
+
+    <ImageButton
+        android:id="@+id/police_button"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginLeft="38dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emer_message"
+        app:layout_constraintVertical_bias="0.531"
+        app:srcCompat="@drawable/police" />
+
+    <ImageButton
+        android:id="@+id/fire_button"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginRight="38dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emer_message"
+        app:layout_constraintVertical_bias="0.531"
+        app:srcCompat="@drawable/fire" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
